@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "MyDownload",
+  "version": "1.0",
+  "description": "Manda os downloads do Chrome para o MyDownload.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuYF0QZxRKmPGvOwCPrYE6UzRBzjtfGg9cNgl4orJDpYTqh45Oe8PzT6MV7xBp49VQtshxGQC7jyY/OmPGnQp5QVJ2ozL/eAC3Dybg6B8VFqsV2JmApT2IokUUFSk+14Gz4wPv17wCAuRphPYh8w71u28OkCdrHHrLhR/sMWWzhFL6wZnfE3zxICV6xojht3cDmcNNoYcJL8I3ZmlM4wzcMr1lfsLWUyWqc16k6iX0QgasuWblSqH3MHMYKnUAl7uASmpbJYD3RmIHXUOQrepTO3z8iQToVGrDTCRq/PXx2Sdi0sDWc8xhvwxq52FqC3jOdEOn53fWozJNeTH3rqn3QIDAQAB",
+  "permissions": ["downloads", "nativeMessaging", "contextMenus", "storage"],
+  "background": { "service_worker": "background.js" },
+  "icons": { "16": "icon16.png", "32": "icon32.png", "48": "icon48.png", "128": "icon128.png" },
+  "action": { "default_title": "MyDownload", "default_popup": "popup.html" }
+}

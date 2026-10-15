@@ -1,0 +1,28 @@
+# Build output
+*.exe
+*.pdb
+bin/
+obj/
+publish/
+
+# Extension signing key (only the public key goes in manifest.json)
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+
+# IDEs
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+
+# Runtime
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini

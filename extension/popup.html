@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { --bg: #f3f3f3; --card: #fff; --text: #1a1a1a; --muted: #5f6368; --line: #e3e3e3; --accent: #0067c0; --ok: #0f7b0f; --err: #c42b1c; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #202020; --card: #2b2b2b; --text: #f3f3f3; --muted: #a6a6a6; --line: #3b3b3b; --accent: #4cc2ff; --ok: #6ccb5f; --err: #ff99a4; } }
+  body { margin: 0; width: 280px; background: var(--bg); color: var(--text); font: 13px "Segoe UI Variable Text", "Segoe UI", sans-serif; }
+  main { padding: 14px; }
+  h1 { font-size: 14px; font-weight: 600; margin: 0 0 12px; }
+  label { display: flex; align-items: center; gap: 10px; padding: 10px 12px; background: var(--card); border: 1px solid var(--line); border-radius: 8px; cursor: pointer; }
+  input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0; }
+  p { margin: 10px 2px 0; color: var(--muted); line-height: 1.4; }
+  .ok { color: var(--ok); } .err { color: var(--err); }
+</style>
+</head>
+<body>
+<main>
+  <h1>MyDownload</h1>
+  <label><input type="checkbox" id="enabled"> Mandar os downloads do Chrome para o MyDownload</label>
+  <p id="status">Verificando o MyDownload…</p>
+  <p>Arquivos com menos de 1 MB e links que precisam de login continuam no Chrome. Botão direito num link: “Baixar com MyDownload”.</p>
+</main>
+<script src="popup.js"></script>
+</body>
+</html>
